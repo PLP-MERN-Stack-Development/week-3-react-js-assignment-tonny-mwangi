@@ -1,71 +1,103 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19782354&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
+# My React App
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A modern React application featuring a task manager and API data display, styled with Tailwind CSS.
 
-## Assignment Overview
+## Table of Contents
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [License](#license)
+
+## Features
+
+- Task management (add, remove, complete tasks)
+- Fetch and display data from an API
+- Responsive design with Tailwind CSS
+- Dark mode support
+
+## Screenshots
+
+### Project Structure
+
+![Project Structure](screenshots/structure.png)
+
+### Task Manager
+
+![Task Manager](screenshots/task-manager.png)
+
+### API Data Section
+
+![API Data](screenshots/api-data.png)
+
+> _Place your screenshots in a `screenshots/` folder at the root of your project._
 
 ## Getting Started
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [pnpm](https://pnpm.io/) (or use npm/yarn if you prefer)
+
+### Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/your-repo.git
+   cd my-app
    ```
+
+2. **Install dependencies:**
+   ```sh
+   pnpm install
+   # or
    npm install
+   # or
+   yarn install
    ```
-4. Start the development server:
-   ```
+
+3. **Start the development server:**
+   ```sh
+   pnpm dev
+   # or
    npm run dev
+   # or
+   yarn dev
    ```
 
-## Files Included
+4. **Open your browser and visit:**
+   ```
+   http://localhost:5173
+   ```
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+## Available Scripts
 
-## Requirements
-
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+- `pnpm dev` – Start the development server
+- `pnpm build` – Build for production
+- `pnpm start` – Start the production server
 
 ## Project Structure
 
 ```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+my-app/
+├── public/
+├── screenshots/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── lib/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── package.json
+├── pnpm-lock.yaml
+├── README.md
+└── vite.config.js
 ```
 
-## Submission
+## License
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
-
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
-
-## Resources
-
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+[MIT](LICENSE)
