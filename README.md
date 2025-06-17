@@ -97,7 +97,3 @@ my-app/
 ├── README.md
 └── vite.config.js
 ```
-
-## License
-
-[MIT](LICENSE)
