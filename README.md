@@ -32,7 +32,7 @@ A modern React application featuring a task manager and API data display, styled
 
 ![API Data](screenshots/api-data.png)
 
-> _Place your screenshots in a `screenshots/` folder at the root of your project._
+
 
 ## Getting Started
 
