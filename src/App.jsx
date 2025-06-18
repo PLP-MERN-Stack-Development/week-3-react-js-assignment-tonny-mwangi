@@ -6,7 +6,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import TaskManager from './components/TaskManager';
-import ApiData from './components/ApiData'; // Assuming you have an ApiData component
+import ApiData from './components/ApiData';
+
 
 function App() {
   const [count, setCount] = useState(0);

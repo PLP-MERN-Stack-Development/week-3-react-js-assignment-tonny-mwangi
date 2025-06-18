@@ -1,14 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+    const [darkMode, setDarkMode] = useState(true);
+
+    const handleToggle = () => setDarkMode((prev) => !prev);
+
+    const currentStyles = {
+        nav: {
+            ...styles.nav,
+            background: darkMode ? '#333' : '#f5f5f5',
+            color: darkMode ? '#fff' : '#222',
+        },
+        logo: {
+            ...styles.logo,
+            color: darkMode ? '#fff' : '#222',
+        },
+        navLinks: styles.navLinks,
+        link: {
+            ...styles.link,
+            color: darkMode ? '#fff' : '#222',
+        },
+        button: {
+            marginLeft: '20px',
+            padding: '6px 14px',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            background: darkMode ? '#555' : '#ddd',
+            color: darkMode ? '#fff' : '#222',
+        }
+    };
+
     return (
-        <nav style={styles.nav}>
-            <div style={styles.logo}>MyApp</div>
-            <ul style={styles.navLinks}>
-                <li><a href="/" style={styles.link}>Home</a></li>
-                <li><a href="/about" style={styles.link}>About</a></li>
-                <li><a href="/contact" style={styles.link}>Contact</a></li>
+        <nav style={currentStyles.nav}>
+            <div style={currentStyles.logo}>MyApp</div>
+            <ul style={currentStyles.navLinks}>
+                <li><a href="/" style={currentStyles.link}>Home</a></li>
+                <li><a href="/about" style={currentStyles.link}>About</a></li>
+                <li><a href="/contact" style={currentStyles.link}>Contact</a></li>
             </ul>
+            <button style={currentStyles.button} onClick={handleToggle}>
+                {darkMode ? 'Light Mode' : 'Dark Mode'}
+            </button>
         </nav>
     );
 };
@@ -25,7 +58,6 @@ const styles = {
         background: '#333',
         padding: '10px 20px',
         color: '#fff',
-        zIndex: 1000
     },
     logo: {
         fontWeight: 'bold',
