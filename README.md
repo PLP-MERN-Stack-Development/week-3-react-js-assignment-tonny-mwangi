@@ -2,6 +2,10 @@
 
 A modern React application featuring a task manager and API data display, styled with Tailwind CSS.
 
+### Project URL
+
+https://task-manager-alpha-wine.vercel.app/
+
 ## Table of Contents
 
 - [Features](#features)
